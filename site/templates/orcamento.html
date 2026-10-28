@@ -1,0 +1,97 @@
+<section class="sec pagina-topo" aria-labelledby="t-orc">
+  <div class="wrap">
+    <nav class="trilha" aria-label="Você está em"><a href="{{R}}">Início</a> / Orçamento</nav>
+    <div class="cabeca">
+      <p class="sobretitulo">{{divisor}} Monte sua cobertura</p>
+      <h1 class="titulo" id="t-orc">Me conta do seu evento.</h1>
+      <p class="lead">Quatro perguntas rápidas. No fim, a mensagem sai pronta pra você mandar no meu WhatsApp. Nada é enviado por este site.</p>
+    </div>
+
+    <div class="orc-layout">
+      <form class="orc" data-orcamento novalidate>
+        <ol class="etapas-prog" aria-hidden="true"><li class="is-atual"></li><li></li><li></li><li></li><li></li></ol>
+        <p class="sr-only" aria-live="polite" data-etapa-status></p>
+
+        <fieldset class="etapa is-atual" data-etapa="1">
+          <legend>1. O evento</legend>
+          <div class="campo">
+            <span class="rotulo" id="r-tipo">Tipo de evento</span>
+            <div class="opcoes" role="radiogroup" aria-labelledby="r-tipo">{{opcoesTipo}}</div>
+          </div>
+          <div class="form form--2 mt-l">
+            <div class="campo"><label for="o-data">Data</label><input type="date" id="o-data" name="data" required></div>
+            <div class="campo"><label for="o-hora">Horário de início</label><input type="time" id="o-hora" name="hora"></div>
+            <div class="campo campo--cheio"><label for="o-duracao">Duração estimada</label>
+              <select id="o-duracao" name="duracao">
+                <option value="">Ainda não sei</option>
+                <option>Até 2 horas</option><option>3 horas</option><option>4 horas</option><option>5 horas</option><option>6 horas ou mais</option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="etapa" data-etapa="2">
+          <legend>2. Onde e pra quantos</legend>
+          <div class="form form--2">
+            <div class="campo campo--cheio"><label for="o-local">Local (bairro e cidade)</label><input type="text" id="o-local" name="local" autocomplete="address-level2" placeholder="Ex.: Tatuapé, São Paulo" required></div>
+            <div class="campo campo--cheio"><label for="o-convidados">Número aproximado de convidados</label>
+              <select id="o-convidados" name="convidados">
+                <option value="">Ainda não sei</option>
+                <option>Até 30</option><option>30 a 80</option><option>80 a 150</option><option>150 a 300</option><option>Mais de 300</option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="etapa" data-etapa="3">
+          <legend>3. Formatos e entrega</legend>
+          <div class="campo">
+            <span class="rotulo" id="r-formatos">O que você quer?</span>
+            <div class="opcoes" role="group" aria-labelledby="r-formatos">{{opcoesFormatos}}</div>
+          </div>
+          <div class="campo mt-l">
+            <span class="rotulo" id="r-entregas">Entrega desejada</span>
+            <div class="opcoes" role="group" aria-labelledby="r-entregas">{{opcoesEntregas}}</div>
+          </div>
+        </fieldset>
+
+        <fieldset class="etapa" data-etapa="4">
+          <legend>4. Mais alguma coisa?</legend>
+          <div class="form">
+            <div class="campo"><label for="o-nome">Seu nome</label><input type="text" id="o-nome" name="nome" autocomplete="given-name"></div>
+            <div class="campo"><label for="o-obs">Conta o que for importante (tema, horários especiais, ideias)</label><textarea id="o-obs" name="obs"></textarea></div>
+          </div>
+        </fieldset>
+
+        <fieldset class="etapa" data-etapa="5">
+          <legend>Resumo da sua cobertura</legend>
+          <ul class="resumo" data-resumo></ul>
+          <p class="estimativa" data-estimativa></p>
+          <div class="botoes">
+            <a class="btn btn--grad" data-wa-btn href="{{waLink}}" target="_blank" rel="noopener">{{iconeWa}} Enviar no WhatsApp</a>
+          </div>
+          <div class="msg-pronta mt-l" data-msg-pronta hidden>
+            <label class="rotulo" for="o-msg">Mensagem pronta — copie e cole no WhatsApp</label>
+            <textarea id="o-msg" readonly></textarea>
+            <div class="botoes"><button type="button" class="btn btn--escuro btn--sm" data-copiar="#o-msg">Copiar mensagem</button></div>
+            <span class="copiado" aria-live="polite"></span>
+          </div>
+        </fieldset>
+
+        <div class="etapa-nav">
+          <button type="button" class="btn btn--contorno" data-voltar hidden>Voltar</button>
+          <button type="submit" class="btn btn--escuro" data-avancar>Continuar</button>
+        </div>
+        <p class="nota-js mt-l">Com o JavaScript desligado, me chama direto no <a href="{{waLink}}">WhatsApp</a> com essas informações.</p>
+      </form>
+
+      <aside aria-label="Antes de mandar">
+        <div class="cartao cartao--linhas">
+          <h2 class="titulo titulo--m" style="font-size:1.4rem">Não deixe pra última hora</h2>
+          <p>As datas mais disputadas fecham primeiro. A reserva só vale depois que a gente confirma tudo pelo WhatsApp.</p>
+          <p class="mb-0">{{precoNota}}</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>

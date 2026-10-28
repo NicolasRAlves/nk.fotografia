@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{titulo}}</title>
+<meta name="description" content="{{descricao}}">
+<meta name="theme-color" content="#0A0A0B">
+{{canonical}}
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="NK Fotografia">
+<meta property="og:title" content="{{ogTitulo}}">
+<meta property="og:description" content="{{descricao}}">
+<meta property="og:image" content="{{ogImagem}}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="{{R}}favicon.svg" type="image/svg+xml">
+<link rel="icon" href="{{R}}favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="{{R}}apple-touch-icon.png">
+<link rel="preload" href="{{R}}assets/fonts/lexend-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{R}}assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+{{preload}}
+<link rel="stylesheet" href="{{R}}assets/css/site.css">
+<script>document.documentElement.classList.add('js');{{introScript}}</script>
+{{jsonld}}
+</head>
+<body class="{{bodyClasse}}"{{bodyEstilo}}>
+{{intro}}
+{{topo}}
+<main id="conteudo" tabindex="-1">
+{{main}}
+</main>
+{{rodape}}
+{{flutuantes}}
+{{lightbox}}
+<script id="nk-dados" type="application/json">{{dados}}</script>
+<script src="{{R}}assets/js/main.js" defer></script>
+{{scripts}}
+</body>
+</html>

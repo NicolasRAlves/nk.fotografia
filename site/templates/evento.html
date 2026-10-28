@@ -1,0 +1,66 @@
+<!-- Template de página de evento. Os {{campos}} vêm de data/config.js e data/fotos.js.
+     Gere as páginas com: node scripts/gerar-paginas.mjs -->
+
+<!-- 1. HERO -->
+{{hero}}
+
+<!-- 2. GALERIA -->
+<section class="sec {{galeriaSecClasse}}" id="galeria" aria-labelledby="t-galeria">
+  <div class="wrap">
+    <div class="cabeca cabeca--linha">
+      <div>
+        <p class="sobretitulo">{{divisor}} Galeria</p>
+        <h2 class="titulo titulo--m" id="t-galeria">{{nome}} que eu fotografei</h2>
+      </div>
+      <p class="texto-sec mb-0">{{contagem}}</p>
+    </div>
+    {{filtroTrabalhos}}
+    {{galeria}}
+  </div>
+</section>
+
+<!-- 3. VÍDEO DA CATEGORIA -->
+<section class="sec sec--escuro" aria-labelledby="t-video">
+  <div class="wrap dupla">
+    <div>
+      <p class="sobretitulo">{{divisor}} Em movimento</p>
+      <h2 class="titulo titulo--m" id="t-video">O evento também em vídeo</h2>
+      <p class="lead">Foto guarda o instante; o vídeo guarda o som, a música e o clima. Dá pra levar os dois na mesma cobertura.</p>
+      <a class="link-seta" href="{{R}}orcamento/?evento={{slug}}">Montar minha cobertura</a>
+    </div>
+    <div>{{video}}</div>
+  </div>
+</section>
+
+<!-- 4. O QUE ESTÁ INCLUSO -->
+<section class="sec sec--branco" aria-labelledby="t-incluso">
+  <div class="wrap">
+    <div class="cabeca">
+      <p class="sobretitulo">{{divisor}} Cobertura</p>
+      <h2 class="titulo titulo--m" id="t-incluso">O que está incluso</h2>
+      {{preco}}
+    </div>
+    {{incluso}}
+  </div>
+</section>
+
+<!-- 5. COMO FUNCIONA + bastidores (destaque "PRODUÇÃO") -->
+<section class="sec sec--escuro" aria-labelledby="t-processo">
+  <div class="wrap">
+    <div class="cabeca">
+      <p class="sobretitulo">{{divisor}} Como eu trabalho</p>
+      <h2 class="titulo titulo--m" id="t-processo">Do primeiro “oi” às fotos na sua mão</h2>
+    </div>
+    {{processo}}
+    {{bastidores}}
+  </div>
+</section>
+
+<!-- 6. COMBINA COM -->
+{{combina}}
+
+<!-- 7. FAQ -->
+{{faq}}
+
+<!-- 8. CTA FINAL + checador de disponibilidade -->
+{{cta}}

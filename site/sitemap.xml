@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- [CLIENTE INFORMAR: domínio] Preencha siteUrl em data/config.js e rode o gerador de novo. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://DOMINIO-A-DEFINIR/</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://DOMINIO-A-DEFINIR/eventos/shows-e-artistas/</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://DOMINIO-A-DEFINIR/eventos/casamentos/</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://DOMINIO-A-DEFINIR/eventos/aniversarios-infantis/</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://DOMINIO-A-DEFINIR/eventos/aniversarios-e-festas/</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://DOMINIO-A-DEFINIR/eventos/cha-revelacao/</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://DOMINIO-A-DEFINIR/eventos/ensaios/</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://DOMINIO-A-DEFINIR/eventos/conteudo-social/</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://DOMINIO-A-DEFINIR/eventos/corporativo/</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://DOMINIO-A-DEFINIR/eventos/drone/</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://DOMINIO-A-DEFINIR/eventos/</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://DOMINIO-A-DEFINIR/portfolio/</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://DOMINIO-A-DEFINIR/sobre/</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://DOMINIO-A-DEFINIR/orcamento/</loc><lastmod>2026-10-28</lastmod></url>
+</urlset>

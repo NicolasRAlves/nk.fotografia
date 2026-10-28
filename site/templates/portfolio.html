@@ -1,0 +1,20 @@
+<section class="sec sec--escuro pagina-topo" aria-labelledby="t-portfolio">
+  <div class="wrap">
+    <nav class="trilha" aria-label="Você está em"><a href="{{R}}">Início</a> / Portfólio</nav>
+    <div class="cabeca cabeca--linha">
+      <div>
+        <p class="sobretitulo">{{divisor}} Portfólio</p>
+        <h1 class="titulo" id="t-portfolio">Tudo o que eu fotografei, separado por evento.</h1>
+      </div>
+      <p class="lead mb-0">Filtra pelo seu tipo de evento e manda o link pra quem vai decidir com você — o filtro vai junto.</p>
+    </div>
+    <div class="chips" role="group" aria-label="Filtrar por evento" data-filtros>
+      {{chips}}
+    </div>
+    <p class="sr-only" aria-live="polite" data-filtro-status></p>
+    {{galeria}}
+    {{placeholders}}
+  </div>
+</section>
+
+{{checador}}

@@ -1,0 +1,121 @@
+<!-- HOME. Textos fixos aqui; dados e fotos vêm de data/config.js e data/fotos.js -->
+
+<!-- 3. HERO -->
+<section class="hero" aria-label="Apresentação" data-hero>
+  <div class="hero__slides">{{heroSlides}}</div>
+  <div class="visor" aria-hidden="true"></div>
+  <div class="wrap hero__conteudo">
+    <p class="hero__exp">{{divisor}} {{experiencia}}</p>
+    <h1>Nícolas Teodoro</h1>
+    <p class="hero__sub">Fotografia e vídeo para eventos em São Paulo</p>
+    <div class="botoes">
+      <a class="btn btn--grad" href="#disponibilidade">Ver disponibilidade</a>
+      <a class="btn btn--contorno" href="{{R}}portfolio/">Ver portfólio</a>
+    </div>
+  </div>
+  {{heroMeta}}
+  <div class="hero__faixa" aria-hidden="true"></div>
+</section>
+
+<!-- 4. QUE EVENTO VOCÊ VAI TER? -->
+<section class="sec" id="eventos" aria-labelledby="t-eventos">
+  <div class="wrap">
+    <div class="cabeca cabeca--linha">
+      <div>
+        <p class="sobretitulo">{{divisor}} Separado por evento</p>
+        <h2 class="titulo" id="t-eventos">Que evento você vai ter?</h2>
+      </div>
+      <p class="lead mb-0">Escolhe o seu e vê só o que interessa: festa infantil pra quem vai ter festa infantil, show pra quem vai ter show.</p>
+    </div>
+    {{cardsEventos}}
+  </div>
+</section>
+
+<!-- 5. DESTAQUES — mosaico com fotos de vários eventos (config.home.destaques) -->
+{{destaques}}
+
+<!-- 6. FOTO + VÍDEO + DRONE -->
+<section class="sec sec--branco" aria-labelledby="t-formatos">
+  <div class="wrap">
+    <div class="cabeca cabeca--linha">
+      <div>
+        <p class="sobretitulo">{{divisor}} Três formatos, uma cobertura</p>
+        <h2 class="titulo" id="t-formatos">Foto. Vídeo. Drone.</h2>
+      </div>
+      <p class="lead mb-0">Você escolhe um, dois ou os três. Eu chego com o equipamento certo pra cada um.</p>
+    </div>
+    {{formatos}}
+  </div>
+</section>
+
+<!-- 7. CONTEÚDO SOCIAL -->
+<section class="sec sec--grafite" aria-labelledby="t-social">
+  <div class="wrap">
+    <div class="cabeca cabeca--linha">
+      <div>
+        <p class="sobretitulo">{{divisor}} Especialista em conteúdo social</p>
+        <h2 class="titulo" id="t-social">Conteúdo pra rede, no formato certo.</h2>
+      </div>
+      <p class="lead mb-0">Reels e fotos pensados pro feed: pra artistas, marcas e perfis que precisam postar com frequência. {{linkSocial}}</p>
+    </div>
+    {{reelsSociais}}
+  </div>
+</section>
+
+<!-- Como eu trabalho (bastidores) -->
+<section class="sec sec--escuro" aria-labelledby="t-processo">
+  <div class="wrap">
+    <div class="cabeca">
+      <p class="sobretitulo">{{divisor}} Como eu trabalho</p>
+      <h2 class="titulo titulo--m" id="t-processo">Do primeiro “oi” às fotos na sua mão</h2>
+    </div>
+    {{processo}}
+  </div>
+</section>
+
+<!-- 8. NA MINHA MOCHILA -->
+<section class="sec sec--branco" aria-labelledby="t-mochila">
+  <div class="wrap dupla">
+    <div class="centro">{{ilustracaoCamera}}</div>
+    <div>
+      <p class="sobretitulo">{{divisor}} Na minha mochila</p>
+      <h2 class="titulo titulo--m" id="t-mochila">O que eu levo pra um dia de cobertura</h2>
+      <p class="lead">Foto e vídeo no mesmo dia pedem equipamento pensado pra não falhar. É isso que vai comigo:</p>
+      {{equipamento}}
+    </div>
+  </div>
+</section>
+
+<!-- 9. QUEM ESTÁ POR TRÁS -->
+<section class="sec" aria-labelledby="t-quem">
+  <div class="wrap dupla">
+    <div class="moldura">{{retrato}}</div>
+    <div>
+      <p class="sobretitulo">{{divisor}} Quem está por trás desse perfil?</p>
+      <h2 class="titulo titulo--m" id="t-quem">Eu sou o Nícolas.</h2>
+      <p class="lead">Fotógrafo e videomaker em São Paulo, {{experienciaMin}}. Especialista em eventos e conteúdo social.</p>
+      {{textoCurto}}
+      <a class="link-seta" href="{{R}}sobre/">Conhecer minha história</a>
+    </div>
+  </div>
+</section>
+
+<!-- 10. CLIENTES & ARTISTAS (só com autorização) -->
+{{clientes}}
+
+<!-- 11. NÃO DEIXE PRA ÚLTIMA HORA — checador -->
+{{checador}}
+
+<!-- 12. INSTAGRAM -->
+<section class="sec sec--branco" aria-labelledby="t-insta">
+  <div class="wrap">
+    <div class="cabeca cabeca--linha">
+      <div>
+        <p class="sobretitulo">{{divisor}} {{instagramUser}}</p>
+        <h2 class="titulo titulo--m" id="t-insta">Os bastidores ficam no Instagram</h2>
+      </div>
+      <a class="btn btn--escuro" href="{{instagram}}" target="_blank" rel="noopener">{{iconeInsta}} Seguir {{instagramUser}}</a>
+    </div>
+    {{gradeInsta}}
+  </div>
+</section>
