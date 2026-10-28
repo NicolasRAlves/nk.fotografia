@@ -1,0 +1,8 @@
+# Originais de fotos e vídeos: ficam só no computador.
+# O site usa as versões geradas em site/assets (sem metadados).
+fotos-entrada/
+
+# Sistema
+Thumbs.db
+desktop.ini
+.DS_Store
